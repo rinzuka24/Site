@@ -69,6 +69,8 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            body
+
         </style>
     </head>
     <body>
@@ -115,26 +117,26 @@
             <div class="container">
                 <div class="select-option">
                     <div class="row option">
-                        <ul>
-                            <li class="option"> Tất cả </li>
-                            <li class="option"> Bất động sản & nghỉ </li>
-                            <li class="option"> Giáo dục & đào tạo </li>
-                            <li class="option"> Sự kiện & hội thảo </li>
-                            <li class="option"> Công nghệ & game </li>
-                            <li class="option"> Sức khỏe & làm đẹp </li>
-                            <li class="option"> Du lịch & nghỉ dưỡng </li>
-                            <li class="option"> Nội thất & nhà cửa </li>
-                            <li class="option"> Tài chính & bảo hiểm  </li>
-                            <li class="option"> Cưới & nhiếp ảnh </li>
-                            <li class="option"> Thực phẩm </li>
-                            <li class="option"> Nhà hàng & quán ăn </li>
-                            <li class="option"> Thời trang & phụ kiện </li>
-                            <li class="option"> Giải trí & nghệ thuật </li>
-                            <li class="option"> Mẹ & bé </li>
-                            <li class="option"> Ô tô & xe máy  </li>
-                            <li class="option"> Quà tặng, khuyến mại, cảm ơn  </li>
-                            <li class="option"> Profile & CV  </li>
-                            <li class="option"> Cảm ơn </li>
+                        <ul class="danhmuc">
+                            <li class="option"> <a href="#"> Thể loại </a>  </li>
+                            <li class="option"> <a href="#"> Tín ngưỡng </a>  </li>
+                            <li class="option"> <a href="#"> Nghệ thuật & Giải trí </a>  </li>
+                            <li class="option"> <a href="#"> Doanh nghiệp & Đầu tư </a>  </li>
+                            <li class="option"> <a href="#"> Ô tô & Xe cộ</a>  </li>
+                            <li class="option"> <a href="#"> Hài Kịch</a>  </li>
+                            <li class="option"> <a href="#"> Máy tính & Internet  </a>  </li>
+                            <li class="option"> <a href="#"> Kinh tế & Thương mại</a>  </li>
+                            <li class="option"> <a href="#"> Thương mại điện tử </a>  </li>
+                            <li class="option"> <a href="#"> Giáo dục </a>  </li>
+                            <li class="option"> <a href="#"> Việc Làm & Công việc </a>  </li>
+                            <li class="option"> <a href="#"> Viễn Tưởng </a>  </li>
+                            <li class="option"> <a href="#"> Thực phẩm, Rượu & Nấu ăn  </a>  </li>
+                            <li class="option"> <a href="#"> Trò chơi </a>  </li>
+                            <li class="option"> <a href="#"> Sản phẩm xanh </a>  </li>
+                            <li class="option"> <a href="#"> Sức khỏe & Thể dục  </a>  </li>
+                            <li class="option"> <a href="#"> Lịch sử & Sự kiện  </a>  </li>
+                            <li class="option"> <a href="#"> Ngôn ngữ  </a>  </li>
+                            <li class="option"> <a href="#"> Live style </a>  </li>
                         </div>
                     </div>
                 </div>
@@ -167,7 +169,7 @@
                             <div class="card-tpl">
                                 <div class="card-body">
                                 <div class="card-tpl-preview">
-                                    <img class="images-responsive" src="../Vidanco/images/tpl-enjoy-travel.jpg">
+                                    <img class="images-responsive" src="/images/tpl-enjoy-travel.jpg">
                                     <div class="card-txtselect">
                                         Select
                                     </div>

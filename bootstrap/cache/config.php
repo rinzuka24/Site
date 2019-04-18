@@ -175,7 +175,7 @@
       'file' => 
       array (
         'driver' => 'file',
-        'path' => 'C:\\Users\\Linh\\Desktop\\lanpage\\storage\\framework/cache/data',
+        'path' => 'C:\\xampp\\htdocs\\Site\\storage\\framework/cache/data',
       ),
       'memcached' => 
       array (
@@ -307,12 +307,12 @@
       'local' => 
       array (
         'driver' => 'local',
-        'root' => 'C:\\Users\\Linh\\Desktop\\lanpage\\storage\\app',
+        'root' => 'C:\\xampp\\htdocs\\Site\\storage\\app',
       ),
       'public' => 
       array (
         'driver' => 'local',
-        'root' => 'C:\\Users\\Linh\\Desktop\\lanpage\\storage\\app/public',
+        'root' => 'C:\\xampp\\htdocs\\Site\\storage\\app/public',
         'url' => 'http://localhost/storage',
         'visibility' => 'public',
       ),
@@ -358,13 +358,13 @@
       'single' => 
       array (
         'driver' => 'single',
-        'path' => 'C:\\Users\\Linh\\Desktop\\lanpage\\storage\\logs/laravel.log',
+        'path' => 'C:\\xampp\\htdocs\\Site\\storage\\logs/laravel.log',
         'level' => 'debug',
       ),
       'daily' => 
       array (
         'driver' => 'daily',
-        'path' => 'C:\\Users\\Linh\\Desktop\\lanpage\\storage\\logs/laravel.log',
+        'path' => 'C:\\xampp\\htdocs\\Site\\storage\\logs/laravel.log',
         'level' => 'debug',
         'days' => 14,
       ),
@@ -428,7 +428,7 @@
       'theme' => 'default',
       'paths' => 
       array (
-        0 => 'C:\\Users\\Linh\\Desktop\\lanpage\\resources\\views/vendor/mail',
+        0 => 'C:\\xampp\\htdocs\\Site\\resources\\views/vendor/mail',
       ),
     ),
     'log_channel' => NULL,
@@ -521,7 +521,7 @@
     'lifetime' => '120',
     'expire_on_close' => false,
     'encrypt' => false,
-    'files' => 'C:\\Users\\Linh\\Desktop\\lanpage\\storage\\framework/sessions',
+    'files' => 'C:\\xampp\\htdocs\\Site\\storage\\framework/sessions',
     'connection' => NULL,
     'table' => 'sessions',
     'store' => NULL,
@@ -541,9 +541,9 @@
   array (
     'paths' => 
     array (
-      0 => 'C:\\Users\\Linh\\Desktop\\lanpage\\resources\\views',
+      0 => 'C:\\xampp\\htdocs\\Site\\resources\\views',
     ),
-    'compiled' => 'C:\\Users\\Linh\\Desktop\\lanpage\\storage\\framework\\views',
+    'compiled' => 'C:\\xampp\\htdocs\\Site\\storage\\framework\\views',
   ),
   'debug-server' => 
   array (
