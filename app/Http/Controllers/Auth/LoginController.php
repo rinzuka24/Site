@@ -7,6 +7,7 @@ use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use App\Classes\ActivationService;
 
+use Auth;
 class LoginController extends Controller
 {
     /*
@@ -38,6 +39,7 @@ class LoginController extends Controller
     public function __construct(ActivationService $activationService)
     {
         $this->middleware('guest', ['except' => 'logout']);
+        $this->middleware('guest:admin')->except('logout');
         $this->activationService = $activationService;
     }
 
@@ -62,4 +64,5 @@ class LoginController extends Controller
     {
     return ['email' => $request->{$this->username()}, 'password' => $request->password, 'active' => 1];
     }
+    
 }

@@ -11,17 +11,28 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
+//admin user
 Auth::routes();
-Route::get('/home', 'HomeController@index')->name('home');
-// Route::get('/login', 'Auth\LoginController')->name('login');
 
-Route::resource('admin/product', 'ProductController', [
-	'only' => ['create', 'store', 'edit'],
-	'middleware' => 'auth'
-]);
+Route::get('/home', 'HomeController@index')->name('home');
+
 //xac thuc tai khoan bang mail
 Route::get('user/activation/{token}', 'Auth\RegisterController@activateUser')->name('user.activate');
+//admin 
+Route::group(['middleware' => ['web','auth']],function(){
+	Route::get('/', function () {
+	    return view('welcome');
+	});
+	Route::get('home',function(){
+		if(Auth::user()->admins == 0){
+			return view('home');
+		}
+		else{
+			$users['users'] = \App\User::all();
+			return view('admin_home',$users);
+		}
+	});
+});
+
+

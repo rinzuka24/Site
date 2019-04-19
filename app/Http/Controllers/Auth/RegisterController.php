@@ -15,6 +15,8 @@ use App\Classes\ActivationService;
 use App\UserActivation;
 use App\Mail\UserActivationEmail;
 
+use App\Admin;
+use Illuminate\Support\Facades\Hash;
 class RegisterController extends Controller
 {
     /*
@@ -47,6 +49,7 @@ class RegisterController extends Controller
     public function __construct(ActivationService $activationService)
     {
         $this->middleware('guest');
+        $this->middleware('guest:admin');
         $this->activationService = $activationService;
     }
 
@@ -80,7 +83,16 @@ class RegisterController extends Controller
             'password' => bcrypt($data['password']),
         ]);
     }
-
+    protected function createAdmin(Request $request)
+    {
+        $this->validator($request->all())->validate();
+        $admin = Admin::create([
+            'name' => $request['name'],
+            'email' => $request['email'],
+            'password' => Hash::make($request['password']),
+        ]);
+        return redirect()->intended('login/admin');
+    }
     /**
      * Handle a registration request for the application.
      *

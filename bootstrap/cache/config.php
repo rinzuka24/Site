@@ -102,6 +102,11 @@
         'provider' => 'users',
         'hash' => false,
       ),
+      'admin' => 
+      array (
+        'driver' => 'session',
+        'provider' => 'admins',
+      ),
     ),
     'providers' => 
     array (
@@ -110,12 +115,24 @@
         'driver' => 'eloquent',
         'model' => 'App\\User',
       ),
+      'admins' => 
+      array (
+        'driver' => 'eloquent',
+        'model' => 'App\\Admin',
+      ),
     ),
     'passwords' => 
     array (
       'users' => 
       array (
         'provider' => 'users',
+        'table' => 'password_resets',
+        'expire' => 60,
+      ),
+      'admins' => 
+      array (
+        'provider' => 'admins',
+        'email' => 'auth.emails.password',
         'table' => 'password_resets',
         'expire' => 60,
       ),
@@ -175,7 +192,7 @@
       'file' => 
       array (
         'driver' => 'file',
-        'path' => 'C:\\xampp\\htdocs\\Site\\storage\\framework/cache/data',
+        'path' => 'C:\\Users\\Linh\\Desktop\\lanpage\\storage\\framework/cache/data',
       ),
       'memcached' => 
       array (
@@ -307,12 +324,12 @@
       'local' => 
       array (
         'driver' => 'local',
-        'root' => 'C:\\xampp\\htdocs\\Site\\storage\\app',
+        'root' => 'C:\\Users\\Linh\\Desktop\\lanpage\\storage\\app',
       ),
       'public' => 
       array (
         'driver' => 'local',
-        'root' => 'C:\\xampp\\htdocs\\Site\\storage\\app/public',
+        'root' => 'C:\\Users\\Linh\\Desktop\\lanpage\\storage\\app/public',
         'url' => 'http://localhost/storage',
         'visibility' => 'public',
       ),
@@ -358,13 +375,13 @@
       'single' => 
       array (
         'driver' => 'single',
-        'path' => 'C:\\xampp\\htdocs\\Site\\storage\\logs/laravel.log',
+        'path' => 'C:\\Users\\Linh\\Desktop\\lanpage\\storage\\logs/laravel.log',
         'level' => 'debug',
       ),
       'daily' => 
       array (
         'driver' => 'daily',
-        'path' => 'C:\\xampp\\htdocs\\Site\\storage\\logs/laravel.log',
+        'path' => 'C:\\Users\\Linh\\Desktop\\lanpage\\storage\\logs/laravel.log',
         'level' => 'debug',
         'days' => 14,
       ),
@@ -428,7 +445,7 @@
       'theme' => 'default',
       'paths' => 
       array (
-        0 => 'C:\\xampp\\htdocs\\Site\\resources\\views/vendor/mail',
+        0 => 'C:\\Users\\Linh\\Desktop\\lanpage\\resources\\views/vendor/mail',
       ),
     ),
     'log_channel' => NULL,
@@ -521,7 +538,7 @@
     'lifetime' => '120',
     'expire_on_close' => false,
     'encrypt' => false,
-    'files' => 'C:\\xampp\\htdocs\\Site\\storage\\framework/sessions',
+    'files' => 'C:\\Users\\Linh\\Desktop\\lanpage\\storage\\framework/sessions',
     'connection' => NULL,
     'table' => 'sessions',
     'store' => NULL,
@@ -541,9 +558,9 @@
   array (
     'paths' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\Site\\resources\\views',
+      0 => 'C:\\Users\\Linh\\Desktop\\lanpage\\resources\\views',
     ),
-    'compiled' => 'C:\\xampp\\htdocs\\Site\\storage\\framework\\views',
+    'compiled' => 'C:\\Users\\Linh\\Desktop\\lanpage\\storage\\framework\\views',
   ),
   'debug-server' => 
   array (
