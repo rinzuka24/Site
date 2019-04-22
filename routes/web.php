@@ -33,6 +33,16 @@ Route::group(['middleware' => ['web','auth']],function(){
 			return view('admin_home',$users);
 		}
 	});
-});
+	Route::get('page', 'PageController@index');
+	Route::get('/page/{id}', 'PageController@detail');
 
+	Route::get('page-builder', 'PageBuiderController@index');
+	});
+
+//page
+
+//user-edit
+Route::resource('users', 'UserController');
+Route::get('/user/create','UserController@create');
+Route::get('/user/store','UserController@store');
 

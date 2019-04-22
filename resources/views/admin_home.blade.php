@@ -25,6 +25,8 @@
                                 <td>{{$key+1}}</td>
                                 <td>{{$value->name}}</td>
                                 <td>{{$value->email}}</td>
+                                <td>Edit</td>
+                                <td>Delete</td>
                             </tr>
                             @endforeach
                         </tbody>
