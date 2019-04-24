@@ -9,7 +9,7 @@ var editor = grapesjs.init({
                         'grapesjs-tabs','grapesjs-lory-slider',
                         'grapesjs-custom-code',
                         'grapesjs-tooltip',
-                        'grapesjs-plugin-forms',myPluginForm,
+                        'grapesjs-plugin-forms',
                         ],
     pluginsOpts: { 
         'gjs-navbar': {},

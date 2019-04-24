@@ -131,100 +131,55 @@ function myPlugin(editor){
         content: '<a data-gjs-type="link" class="link-block"></a>'
         +'<style>.link-block{min-height:50px;min-width:50px;padding:5px;display:inline-block}</style>'
     });
-    // editor.BlockManager.add('radio',{
-    //     label: 'Radio',
-    //     category: 'Forms',
-    //     attributes: {
-    //         class: 'fa fa-dot-circle-o'
-    //     },
-    //     content: '<div class="row">'
-    //     +'<div class="input-field col s12">'
-    //     +'<p>'
-    //     +'<input name="group1" type="radio" id="test1"/>'
-    //     +'<label for="test1">Red</label>'
-    //     +'</p>'
-    //     +'<p>'
-    //     +'<input name="group1" type="radio" id="test2"/>'
-    //     +'<label for="test2">Yellow</label>'
-    //     +'</p>'
-    //     +'<p>'
-    //     +'<input class="with-gap" name="group1" type="radio" id="test3" />'
-    //     +'<label for="test3">Green</label>'
-    //     +'</p>'
-    //     +'<p>'
-    //     +'<input name="group1" type="radio" id="test4" disabled="disabled"/>'
-    //     +'<label for="test4">Brown</label>'
-    //     +'</p>'
-    //     +'</div>'
-    //     +'</div>'
-    // });
-    // editor.BlockManager.add('checkbox',{
-    //     label: 'Checkbox',
-    //     category: 'Forms',
-    //     attributes: {
-    //         class: 'fa fa-check-square-o'
-    //     },
-    //     content: '<div class="row">'
-    //     +'<div class="input-field col s12">'
-    //     +'<p>'
-    //     +'<input type="checkbox" id="test5" />'
-    //     +'<label for="test5">Red</label>'
-    //     +'</p>'
-    //     +'<p>'
-    //     +'<input type="checkbox" id="test6" checked="checked" />'
-    //     +'<label for="test6">Yellow</label>'
-    //     + '</p>'
-    //     +'</div>'
-    //     +'</div>'
-    // });
+    
     // editor.BlockManager.add('',{});
   }
 
-  function myPluginForm(editor){
-    editor.BlockManager.add('radio',{
-        label: 'Radio',
-        category: 'Forms',
-        attributes: {
-            class: 'fa fa-dot-circle-o'
-        },
-        content: '<div class="row">'
-        +'<div class="input-field col s12">'
-        +'<p>'
-        +'<input name="group1" type="radio" id="test1"/>'
-        +'<label for="test1">Red</label>'
-        +'</p>'
-        +'<p>'
-        +'<input name="group1" type="radio" id="test2"/>'
-        +'<label for="test2">Yellow</label>'
-        +'</p>'
-        +'<p>'
-        +'<input class="with-gap" name="group1" type="radio" id="test3" />'
-        +'<label for="test3">Green</label>'
-        +'</p>'
-        +'<p>'
-        +'<input name="group1" type="radio" id="test4" disabled="disabled"/>'
-        +'<label for="test4">Brown</label>'
-        +'</p>'
-        +'</div>'
-        +'</div>'
-    });
-    editor.BlockManager.add('checkbox',{
-        label: 'Checkbox',
-        category: 'Forms',
-        attributes: {
-            class: 'fa fa-check-square-o'
-        },
-        content: '<div class="row">'
-        +'<div class="input-field col s12">'
-        +'<p>'
-        +'<input type="checkbox" id="test5" />'
-        +'<label for="test5">Red</label>'
-        +'</p>'
-        +'<p>'
-        +'<input type="checkbox" id="test6" checked="checked" />'
-        +'<label for="test6">Yellow</label>'
-        + '</p>'
-        +'</div>'
-        +'</div>'
-    });
-  }
+  // function myPluginForm(editor){
+  //   editor.BlockManager.add('radio',{
+  //       label: 'Radio',
+  //       category: 'Forms',
+  //       attributes: {
+  //           class: 'fa fa-dot-circle-o'
+  //       },
+  //       content: '<div class="row">'
+  //       +'<div class="input-field col s12">'
+  //       +'<p>'
+  //       +'<input name="group1" type="radio" id="test1"/>'
+  //       +'<label for="test1">Red</label>'
+  //       +'</p>'
+  //       +'<p>'
+  //       +'<input name="group1" type="radio" id="test2"/>'
+  //       +'<label for="test2">Yellow</label>'
+  //       +'</p>'
+  //       +'<p>'
+  //       +'<input class="with-gap" name="group1" type="radio" id="test3" />'
+  //       +'<label for="test3">Green</label>'
+  //       +'</p>'
+  //       +'<p>'
+  //       +'<input name="group1" type="radio" id="test4" disabled="disabled"/>'
+  //       +'<label for="test4">Brown</label>'
+  //       +'</p>'
+  //       +'</div>'
+  //       +'</div>'
+  //   });
+  //   editor.BlockManager.add('checkbox',{
+  //       label: 'Checkbox',
+  //       category: 'Forms',
+  //       attributes: {
+  //           class: 'fa fa-check-square-o'
+  //       },
+  //       content: '<div class="row">'
+  //       +'<div class="input-field col s12">'
+  //       +'<p>'
+  //       +'<input type="checkbox" id="test5" />'
+  //       +'<label for="test5">Red</label>'
+  //       +'</p>'
+  //       +'<p>'
+  //       +'<input type="checkbox" id="test6" checked="checked" />'
+  //       +'<label for="test6">Yellow</label>'
+  //       + '</p>'
+  //       +'</div>'
+  //       +'</div>'
+  //   });
+  // }
